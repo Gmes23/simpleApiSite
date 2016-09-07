@@ -1,0 +1,32 @@
+.col-md-8 {
+	position: fixed;
+	margin: 10px;
+	top: 10x;
+
+}
+
+div {
+	margin: 10px;
+}
+
+
+#searchBox{
+	
+	margin-right: -500px;
+	
+	
+}
+
+#buttonBlueMovie{
+	margin: 10px;
+	height:auto;
+    display:inline-block;
+}
+
+#logo{
+	margin-right: -500px;
+}
+
+body{
+	background: url("../images/blackground1.jpg");
+}
