@@ -15,17 +15,19 @@ function renderButtons(){
 
         $('.movie').on('click', function(){
 
-    var p = $(this).data('number'); 
+            emptyMovie();
 
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + p + "&api_key=dc6zaTOxFJmzC&limit=10";
-    $.ajax({url: queryURL, method: 'GET'})
-     .done(function(response) {
-         var results = response.data;
-         for(var i=0; i < results.length; i++){
-            if (results[i].rating == "r" || results[i].rating == "pg-13")
-            {
-            }
-            else {
+            var p = $(this).data('number'); 
+
+            var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + p + "&api_key=dc6zaTOxFJmzC&limit=10";
+            $.ajax({url: queryURL, method: 'GET'})
+            .done(function(response) {
+             var results = response.data;
+            for(var i=0; i < results.length; i++){
+            //if (results[i].rating == "r" || results[i].rating == "pg-13")
+            //{
+            //}
+            //else {
              var gifDiv = $('<div class="item">')
 
              var rating = results[i].rating;
@@ -42,9 +44,9 @@ function renderButtons(){
 
              $('#moviesGifs').prepend(gifDiv);
 
-             //$('.item').freezeframe();               
-            }
-         }
+             //$('.item')append.freezeframe();               
+            //}
+        }
         
     }); 
 });
@@ -74,11 +76,6 @@ renderButtons();
 
 
 function emptyMovie(){
-    $('#movieGifs').empty();
+    $('#moviesGifs').empty();
 }
 
-$(document).on('click', '.buttonBlueMovie', emptymovieGifs);
-
-$(document).on('click', '.buttonBlueMovie', clickGif);
-
-renderButtons()
