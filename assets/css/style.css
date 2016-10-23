@@ -1,4 +1,7 @@
-.col-md-8 {
+/*SETUP YOUR LAYOUT SUCCESSFULLY WITH BOOTSTRAP FIRST*/
+/*YOUR CSS IS BREAKING YOUR VIEW LAYER*/
+
+/*.col-md-8 {
 	position: fixed;
 	margin: 10px;
 	top: 10x;
@@ -11,10 +14,10 @@ div {
 
 
 #searchBox{
-	
+
 	margin-right: -500px;
-	
-	
+
+
 }
 
 #buttonBlueMovie{
@@ -29,4 +32,4 @@ div {
 
 body{
 	background: url("../images/blackground1.jpg");
-}
+}*/
